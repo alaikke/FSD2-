@@ -1,0 +1,21 @@
+{
+  "name": "Floripa Sushi Delivery 2",
+  "homepage": "https://github.com/alaikke/FSD2-",
+  "authors": [
+    "alaikke <deejayalaikke@gmail.com>"
+  ],
+  "description": "modelo 2",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
