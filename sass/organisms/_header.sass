@@ -30,8 +30,10 @@ header
 				li 
 					display: inline-block
 					text-transform: uppercase
-					color: $branco
+					color: $pele
 					margin: 0 20px 0 0 
+					font-size: 13px
+
 
 					a 
 
@@ -43,16 +45,22 @@ header
 			li
 				display: inline-block
 				a 
-					color: $branco 
+					color: $pele
 					display: block 
-					border: 1px solid $branco 
+					border: 1px solid $pele
 					padding: 4px 
 					width: 25px
 					height: 25px
 					line-height: 15px
 					text-align: center
-					margin: 0 3px 0 3px 	
+					margin: 0 6px 0 3px 
+					font-size: 12px 	
 					+border-radius(120px)
+
+			&:hover 
+				border-color: $verde  
+			&:focus 
+				border-color: $vermelho
 
 	h1
 

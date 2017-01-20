@@ -9,8 +9,8 @@ body
 		form 
 			margin: 200px 0 0 
 			+clearfix
-			+make-sm-column(8)
-			+make-sm-column-offset(2)
+			+make-sm-column(6)
+			+make-sm-column-offset(3)
 
 
 
@@ -23,37 +23,55 @@ body
 			input, 
 			textarea 
 				width: 100%
-				border: 2px solid $cinza-claro
+				border: 2px solid $pele
 				padding: 7px 
 				text-transform: uppercase
 				background-color: transparent
-				color: $branco
-				+transition(.3s)
-
-
-
+				color: $branco 
+				+transition(.5s)
+			
 				&:hover 
-					border-color: $preto
+					border-color: $verde
 				&:focus 
-					border-color: $azul 
+					border-color: $azul
+
 
 			button 
 
 				display: table 
-				margin: 15px auto
+				margin: 20px auto 20px	
 				text-transform: uppercase
+				background-color: transparent
+				color: $cinza-claro
+				border-color: $pele
+				+transition(.5s)
+
+
+				&:hover 
+					border-color: $verde
+				&:focus 
+					border-color: $azul 
+
+
 
 			h2 
-				color: $branco
+				color: $pele
 				text-transform: uppercase
 				text-align: center
+				margin: 10px 0 20px
 
 			h3
-				color: $branco
+				color: $verde
 				text-transform: uppercase
 				text-align: center
 
+			h4 
+				color: $verde
+				text-transform: uppercase
+				text-align: center
+				margin: 0 0 20px
 			p 
-				color: $branco
+				color: $verde
 				text-align: center	
 				text-transform: uppercase
+				margin: 30px 0 15px 
