@@ -1,1 +1,1 @@
-.fotomain{min-height:800px;background-image:url("../images/16.png");background-repeat:no-repeat;background-color:#000;background-position:center}.fotomain:before,.fotomain:after{content:" ";display:table}.fotomain:after{clear:both}
+.fotomain{min-height:550px;background-image:url("../images/16.png");background-repeat:no-repeat;background-color:#000;background-position:center;background-weight:100%;background-height:100%}.fotomain:before,.fotomain:after{content:" ";display:table}.fotomain:after{clear:both}
