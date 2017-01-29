@@ -1,0 +1,111 @@
+body
+	background-color: $preto	
+
+
+	.cardapio
+
+		
+			
+		h3
+			color: $verde
+			text-transform: uppercase
+			text-align: center
+			font-size: 20px
+
+		
+		h2
+			color: $pele
+			text-transform: uppercase
+			text-align: center
+			font-size: 30px
+			margin-top: 60px
+
+		ul
+			+clearfix
+			+make-row
+
+			margin-top: 60px
+			
+			li
+				+make-md-column(3)
+				+make-sm-column(4) 
+
+
+				overflow: hidden
+				margin-bottom: 30px
+			
+				+breakpoint($tablet)
+					+make-sm-column(6)
+
+					
+
+				+breakpoint($celular)
+					+make-xs-column(8)
+					+make-xs-column-offset(2)
+					padding: 30px
+
+											
+			
+
+				figure 
+					position: relative
+					background: transparent
+					&:hover
+						a 
+							+opacity(1)
+
+						.overlay
+							top: 0
+
+					img 
+						+img-responsive 
+						border: solid 2px $verde
+						border-radius: 100px
+
+
+
+					figcaption
+						
+						a 
+
+							text-align: center
+							text-transform: uppercase
+							margin: 0 5px 0 5px
+							position: absolute
+							z-index: 2
+							color: $pele	
+							width: 100%
+							top: 10%
+							+opacity(0)
+
+							h3 
+								margin: 0
+								+font-size(30px)
+								color: $pele
+							h4 
+								+font-size(25px)
+
+							p 
+								+font-size(20px)
+							
+							strong
+								color: $branco
+
+
+							
+						.overlay 
+							+gradient(270deg, $vermelho, $preto)
+							+opacity(.85)
+							position: absolute
+							left: 0
+							top: 100% 
+							display: block
+							width: 100%
+							height: 100% 
+							border: solid 1px $pele
+							border-radius: 100px
+
+						a, 
+						.overlay 
+							+transition(.4s)
+
