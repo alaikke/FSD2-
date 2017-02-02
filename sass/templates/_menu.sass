@@ -2,23 +2,35 @@ body
 	background-color: $preto	
 
 
+
 	.cardapio
-
 		
-			
-		h3
-			color: $verde
-			text-transform: uppercase
-			text-align: center
-			font-size: 20px
 
-		
-		h2
-			color: $pele
-			text-transform: uppercase
-			text-align: center
-			font-size: 30px
-			margin-top: 60px
+		.foto
+			min-height: 500px
+			margin-top: 100px
+				
+			background:
+				image: url("../images/menufoto.png")
+				+img-responsive 
+				repeat: no-repeat
+				position: center			
+				margin: 100px 0 0 
+				size: 70%
+
+		.texto 
+			h2 
+				text-align: center
+				text-transform: uppercase
+				color: $pele
+
+			h3 
+				text-align: center
+				text-transform: uppercase
+				color: $verde 
+
+
+
 
 		ul
 			+clearfix
@@ -40,10 +52,10 @@ body
 					
 
 				+breakpoint($celular)
-					+make-xs-column(8)
-					+make-xs-column-offset(2)
-					padding: 30px
-
+					display: flex
+					flex-direction: column 
+					flex-wrap: wrap 
+					margin: 50px 50px auto
 											
 			
 
@@ -78,10 +90,6 @@ body
 							top: 10%
 							+opacity(0)
 
-							h3 
-								margin: 0
-								+font-size(30px)
-								color: $pele
 							h4 
 								+font-size(25px)
 
@@ -94,8 +102,8 @@ body
 
 							
 						.overlay 
-							+gradient(270deg, $vermelho, $preto)
-							+opacity(.85)
+							+gradient(270deg, $preto, $preto)
+							+opacity(.8)
 							position: absolute
 							left: 0
 							top: 100% 

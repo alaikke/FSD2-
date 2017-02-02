@@ -40,6 +40,13 @@ header
 		margin: 18px 0 0 
 		padding: 3px
 
+		a 
+			color: $pele
+			&:hover
+				color: $verde
+				+transition(.2s)
+
+
 		nav,
 		.social
 			display: inline-block
@@ -76,10 +83,9 @@ header
 					font-size: 12px 	
 					+border-radius(120px)
 
-			&:hover 
-				border-color: $verde  
-			&:focus 
-				border-color: $vermelho
+					&:hover 
+						border-color: $verde  
+			
 
 	
 
