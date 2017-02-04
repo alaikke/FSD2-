@@ -33,7 +33,7 @@ body
 		//flex//
 		+flexbox 
 		display: flex 
-		flex-wrap: no-wrap
+		flex-wrap: wrap
 		flex-direction: row
 
 
@@ -41,14 +41,12 @@ body
 		article 
 
 			padding: 5%
+			min-width: 550px
 			//flex//
 
 			flex-direction: column
 			flex: 1 0 50%
 
-			+breakpoint($celular)
-				display: flex 
-				flex: 1 0 100%
 
 
 
@@ -79,20 +77,23 @@ body
 
 	aside 
 		
-		flex: 1 0 35%
-		flex-wrap: wrap
+		flex: 1 1 50%
+		
 		padding: 5%
 		+img-responsive 
 		margin-top: 25px
+		width: 200px
+		img 
+			width: 95%
+			height: auto
 	
 
 
 
 
 		.widget
-			border: solid 2px $pele 
-			border-radius: 120px
 
+			
 
 			&:hover
 				border-color: $verde
