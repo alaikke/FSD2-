@@ -52,6 +52,12 @@ header
 			display: inline-block
 
 		nav 
+			+breakpoint($celular)
+				display: none
+
+			+breakpoint($tablet)
+				display: none 
+
 			ul 
 				li 
 					display: inline-block

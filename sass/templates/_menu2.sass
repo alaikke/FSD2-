@@ -11,7 +11,8 @@ body
 				
 			background:
 				image: url("../images/menufoto.png")
-				+img-responsive 
+				width: 100%
+				height: auto  
 				repeat: no-repeat
 				position: center			
 				margin: 100px 0 0 
@@ -30,6 +31,7 @@ body
 	.main 
 		margin-top: 3%
 		//flex//
+		+flexbox 
 		display: flex 
 		flex-wrap: no-wrap
 		flex-direction: row
@@ -43,6 +45,10 @@ body
 
 			flex-direction: column
 			flex: 1 0 50%
+
+			+breakpoint($celular)
+				display: flex 
+				flex: 1 0 100%
 
 
 
@@ -78,11 +84,18 @@ body
 		padding: 5%
 		+img-responsive 
 		margin-top: 25px
+	
+
+
+
+
 		.widget
 			border: solid 2px $pele 
 			border-radius: 120px
 
+
 			&:hover
 				border-color: $verde
 				+transition(.2s)
+			
 
