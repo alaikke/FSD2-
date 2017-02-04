@@ -1,0 +1,25 @@
+{
+  "name": "floripa-sushi-delivery-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaikke/FSD2-.git"
+  },
+  "author": "alaikke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaikke/FSD2-/issues"
+  },
+  "homepage": "https://github.com/alaikke/FSD2-#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

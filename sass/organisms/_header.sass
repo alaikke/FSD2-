@@ -1,0 +1,98 @@
+header
+	+clearfix
+	min-height: 50px
+
+	background:
+		color: $preto
+
+	
+	.logo
+		float: left 
+		margin: 3px 10px 0 15px 
+		list-style: none
+		
+		img	
+			width:  55px
+			height: 23px
+	
+	h2
+		display: inline-block
+		list-style: none
+		color: $cinza-claro
+		font-size: 15px
+		text-transform: uppercase
+		margin: 0 10px 
+
+
+	h1 
+		display: inline-block
+		font-size: 16px
+		text-transform: uppercase
+		color: $vermelho2
+		font-weight: $bold
+		
+  
+		
+	
+
+	.links
+		float: right 
+		margin: 18px 0 0 
+		padding: 3px
+
+		a 
+			color: $pele
+			&:hover
+				color: $verde
+				+transition(.2s)
+
+
+		nav,
+		.social
+			display: inline-block
+
+		nav 
+			+breakpoint($celular)
+				display: none
+
+			+breakpoint($tablet)
+				display: none 
+
+			ul 
+				li 
+					display: inline-block
+					text-transform: uppercase
+					color: $pele
+					margin: 0 20px 0 0 
+					font-size: 13px
+
+
+					a 
+
+
+
+
+
+		.social
+			li
+				display: inline-block
+				a 
+					color: $pele
+					display: block 
+					border: 1px solid $pele
+					padding: 4px 
+					width: 25px
+					height: 25px
+					line-height: 15px
+					text-align: center
+					margin: 0 6px 0 3px 
+					font-size: 12px 	
+					+border-radius(120px)
+
+					&:hover 
+						border-color: $verde  
+			
+
+	
+
+	 

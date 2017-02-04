@@ -1,0 +1,77 @@
+@import organisms/fotocontato
+@import molecules/botoes 
+body
+	background:
+		color: $preto
+	
+	
+	.contato
+		form 
+			margin: 200px 0 0 
+			+clearfix
+			+make-sm-column(6)
+			+make-sm-column-offset(3)
+
+
+
+			.cols 
+				+make-row
+
+			.col 
+				+make-sm-column(6)
+
+			input, 
+			textarea 
+				width: 100%
+				border: 1px solid $pele
+				padding: 7px 
+				text-transform: uppercase
+				background-color: transparent
+				color: $branco 
+				+transition(.5s)
+			
+				&:hover 
+					border-color: $verde
+				&:focus 
+					border-color: $azul
+
+
+			button 
+
+				display: table 
+				margin: 20px auto 20px	
+				text-transform: uppercase
+				background-color: transparent
+				color: $cinza-claro
+				border-color: $pele
+				+transition(.5s)
+
+
+				&:hover 
+					border-color: $verde
+				&:focus 
+					border-color: $azul 
+
+
+
+			h2 
+				color: $pele
+				text-transform: uppercase
+				text-align: center
+				margin: 10px 0 20px
+
+			h3
+				color: $verde
+				text-transform: uppercase
+				text-align: center
+
+			h4 
+				color: $verde
+				text-transform: uppercase
+				text-align: center
+				margin: 0 0 20px
+			p 
+				color: $verde
+				text-align: center	
+				text-transform: uppercase
+				margin: 30px 0 15px 
