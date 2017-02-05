@@ -42,10 +42,21 @@ header
 
 		a 
 			color: $pele
-			&:hover
+				
+			&:hover 
 				color: $verde
 				+transition(.2s)
+				&:after 
+					width: 40%
 
+			&:after 
+				content: ""
+				display: table 
+				margin: 5px auto 0
+				width: 0%
+				height: 2px 
+				background-color: $pele 
+				+transition(.3s)
 
 		nav,
 		.social
@@ -66,18 +77,7 @@ header
 					margin: 0 20px 0 0 
 					font-size: 13px 
 
-					&:hover 
-						&:after 
-							width: 40%
-
-					&:after 
-						content: ""
-						display: table 
-						margin: 5px auto 0
-						width: 0%
-						height: 2px 
-						background-color: $pele 
-						+transition(.3s)
+					
 
 
 
