@@ -203,8 +203,11 @@ body
 							
 							strong
 								color: $branco
-
-
+							+breakpoint($celular)
+							 	h4
+									+font-size(22px)
+								p 	
+									+font-size(18px)
 							
 						.overlay 
 							+gradient(270deg, $preto, $preto)
