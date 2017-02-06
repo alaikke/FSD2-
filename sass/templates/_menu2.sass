@@ -74,6 +74,9 @@ body
 				color: $pele
 				padding: 15px
 				margin: 0 0 0 15px
+
+
+
 			h3
 				color: $pele
 				+font-size(28px)
@@ -88,7 +91,21 @@ body
 			.sub
 				text-align: center
 				text-transform: uppercase
-
+			@media screen and (max-width: 550px)
+				h2
+					+font-size(27px)
+				h3
+					+font-size(25px)
+				p 
+					+font-size(20px)
+			
+			+breakpoint($celular)
+				h2
+					+font-size(23px)
+				h3
+					+font-size(20px)
+				p 
+					+font-size(18px)
 	aside 
 		
 		flex: 1 1 50%
@@ -108,7 +125,14 @@ body
 				margin-right: 100px
 				margin-top: 44px
 				+font-size(30px)
-			
+				+breakpoint($tablet)
+					margin-right: 0px
+
+				+breakpoint($celular)
+					margin-right: 0px
+
+				
+				
 		
 		li 
 
@@ -120,10 +144,18 @@ body
 					background: transparent
 					margin-top: 45px
 					margin-right: 100px
+		
+					
+					
+					+breakpoint($tablet)
+						margin: 30px 30px 0 30px
+						
+					+breakpoint($celular)
+						margin: 30px 30px 0 30px
 
-
+					
 					&:hover
-						a 
+						.a 
 							+opacity(1)
 							color: $pele
 
@@ -142,7 +174,7 @@ body
 
 					figcaption
 						
-						a 
+						.a 
 
 							text-align: center
 							text-transform: uppercase
@@ -179,11 +211,11 @@ body
 							border: solid 1px $pele
 							border-radius: 300px
 
-						a, 
+						.a, 
 						.overlay 
 							+transition(.4s)
 
 			
 		.widget
 
-					margin: 0 0 50px 
+ 
