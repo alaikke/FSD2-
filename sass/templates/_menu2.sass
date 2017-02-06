@@ -17,17 +17,24 @@ body
 				position: center			
 				margin: 100px 0 0 
 				size: 55%
+			+breakpoint($tablet)
+				min-height: 350px
+				margin-top: 60px
 
+			+breakpoint($celular)
+				min-height: 150px
+				margin-top: 40px
 		h2
 			color: $pele 
 			text-align: center
 			text-transform: uppercase
-
+			+font-size(30px)
 		h3
 			color: $verde 
 			text-transform: uppercase
 			text-align: center
-			font-size: 20px
+			+font-size(25px)
+
 	.main 
 		
 		//flex//
