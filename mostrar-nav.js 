@@ -1,0 +1,6 @@
+var $mostrar-nav = $('.mostrar-nav');
+var $oculto = $('.oculto');
+
+$mostrar-nav.on('click', function () {
+	$oculto.toggleClass('mostrar');
+});

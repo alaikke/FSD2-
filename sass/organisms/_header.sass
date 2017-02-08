@@ -13,7 +13,12 @@ header
 		
 		img	
 			width:  55px
-			height: 23px
+			height: auto 
+			+breakpoint($celular)
+			width: 35px
+			height: auto
+			margin: 4px 0px 0 5px
+
 	
 	h2
 		display: inline-block
@@ -22,15 +27,21 @@ header
 		font-size: 15px
 		text-transform: uppercase
 		margin: 0 10px 
+		+breakpoint($celular)
+		font-size: 10px 
+		margin-top: 25px
 
 
 	h1 
 		display: inline-block
-		font-size: 16px
+		font-size: 15px
+		font-weight: $regular 
 		text-transform: uppercase
 		color: $cinza-claro
-		font-weight: $bold
-		
+		font-weight: $regular
+		margin: 0
+		+breakpoint($celular)
+		font-size: 10px 
   
 		
 	
@@ -101,7 +112,20 @@ header
 					&:hover 
 						border-color: $verde 
 						color: $verde 
+		.mostrarnav
 			
+			color: $pele
+			display: block 
+			border: 2px solid $pele
+			padding: 4px 
+			width: 30px
+			height: 30px
+			line-height: 16px
+			text-align: center
+			margin: 0 10px 0 3px 
+			font-size: 14px 	
+			+border-radius(120px)
+			cursor: pointer
 
 	
 

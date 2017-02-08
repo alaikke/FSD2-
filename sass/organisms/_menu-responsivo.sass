@@ -1,9 +1,58 @@
 .menu-responsivo 
-	position: fixed
-	left: 0
-	top: 0
+	
+	.mostrarnav
+			width: 30px
+			height: 30px
+			text-align: center
+			color: $pele
+			+font-size(30px)
+			border: 2px solid $pele
+			+border-radius(40px)
+			z-index: 30
+			cursor: pointer
+	
+	.menu 
+		list-style: none 
+		line-height: 22px
+		// outline: 1px solid $azul 
+		padding-left: 0
+		width: 15em
+		margin: 1em auto 		
+		
+		li 
+			// outline: 1px solid $branco
+			box-shadow: 3px 0 rgba(255,255,255,.2) inset 
+			margin-bottom: 5px
+			color: $cinza-claro
+			+transition(.3s)
+			&:hover
+				box-shadow: 20em 0 rgba(255,255,255,.2) inset 
 
-.layout
-	padding-left: 150px
 
-.toggle
+			a
+				display: block
+				color: $pele
+				text-decoration: none
+				text-transform: uppercase
+				padding: 1em
+				width: 15em
+				&:hover 
+					margin-left: 10px 
+				i 
+					margin-right: 10px
+
+	nav
+		position: absolute 
+		left: -20em
+		z-index: 20 
+		background: $preto 
+		+opacity(.7)
+		height: 100%
+		// top: 0
+
+
+	nav.mostrar
+		left: 0
+
+	
+	
