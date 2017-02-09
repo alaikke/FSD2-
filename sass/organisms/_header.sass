@@ -63,8 +63,7 @@ header
 			display: inline-block
 
 		nav 
-			+breakpoint($celular)
-				display: none
+
 
 			+breakpoint($tablet)
 				display: none 
@@ -115,7 +114,7 @@ header
 		.mostrarnav
 			
 			color: $pele
-			display: block 
+			display: none  
 			border: 2px solid $pele
 			padding: 4px 
 			width: 30px
@@ -126,6 +125,9 @@ header
 			font-size: 14px 	
 			+border-radius(120px)
 			cursor: pointer 
+			+breakpoint($tablet)
+				display: block
+	
 
 	
 

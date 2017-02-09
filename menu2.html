@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/menu2.css">
 	<link rel="stylesheet" href="cdd/menu-responsivo.css">
 	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -608,7 +608,15 @@
 			<p>Floripa Sushi Delivery &copy 2017 Todos os direitos reservados.</p>
 		</div>
 	</footer>
-	
-	<script src="js.js"></script>
+	<!-- Menu responsivo -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		var $mostrarnav = $('.mostrarnav');
+		var $nav = $('nav');
+
+		$mostrarnav.on('click', function () {
+			$nav.toggleClass('mostrar');
+		});
+	</script>
 </body>
 </html>
