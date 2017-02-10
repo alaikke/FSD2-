@@ -8,16 +8,17 @@
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/contato.css">
 	<link rel="icon" href="images/favicon2.png" type="image/jpg"></link> 
+	<link rel="stylesheet" href="css/animate.css"></link> 
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div class="logo wow bounceInLeft">
 			<li><a href="index.html">
 				<img src="images/logofsdtopo.png" alt="logo topo">
 				<h2>Floripa</h2> <h1>Sushi</h1><h2>Delivery</h2>
 			</a>
 		</div>
-		<div class="links">
+		<div class="links wow slideInDown">
 			<nav>	
 				<ul>
 					<li> <a href="index.html">Início</a> </li>
@@ -26,7 +27,7 @@
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
-			<ul class="social">
+			<ul class="social wow slideInDown">
 				<li>
 					<a href="https://www.facebook.com/pg/floripasushidelivery"<i class="fa fa-facebook"></i></a>
 				</li>
@@ -51,7 +52,7 @@
 		</nav>
 	</div>	
 	<main>
-		<section class="contato">
+		<section class="contato wow zoomIn">
 			<div class="container">
 				<div class="fotocontato">
 					<form>
@@ -59,27 +60,27 @@
 						<h4>Fale conosco pelo formulário</h4>
 						<div class="cols">
 							<div class="col">
-								<div class="form-group">
+								<div class="form-group wow slideInLeft">
 									<input type="text" placeholder="Nome" required>
 								</div>
 							</div>
 							<div class="col">
-								<div class="form-group">
+								<div class="form-group wow slideInRight">
 									<input type="email" placeholder="E-mail">
 								</div>
 							</div>
 							<div class="col">
-								<div class="form-group">
+								<div class="form-group wow slideInLeft">
 									<input type="number" placeholder="Telefone">
 								</div>
 							</div>
 							<div class="col">
-								<div class="form-group">
+								<div class="form-group wow slideInRight">
 									<input type="text" placeholder="Assunto">
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group wow slideInDown">
 							<textarea placeholder="Mensagem"></textarea>
 						<div class="form-group">
 							<button class="botao medio"><i class="fa fa-arrow-right"></i> Enviar</button>
@@ -114,5 +115,9 @@
 			$nav.toggleClass('mostrar');
 		});
 	</script>
+	<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+  	</script>
 </body>
 </html>

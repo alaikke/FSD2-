@@ -8,16 +8,17 @@
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/localização.css">
 	<link rel="icon" href="images/favicon2.png" type="image/jpg"></link> 
+	<link rel="stylesheet" href="css/animate.css"></link> 
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div class="logo wow bounceInLeft">
 			<li><a href="index.html">
 				<img src="images/logofsdtopo.png" alt="logo topo" >
 				<h2>Floripa</h2> <h1>Sushi</h1><h2>Delivery</h2>
 			</a>
 		</div>
-		<div class="links">
+		<div class="links wow slideInDown">
 			<nav>	
 				<ul>
 					<li>
@@ -28,7 +29,7 @@
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
-			<ul class="social">
+			<ul class="social wow slideInDown">
 				<li>
 					<a href="https://www.facebook.com/pg/floripasushidelivery"<i class="fa fa-facebook"></i></a>
 				</li>
@@ -54,15 +55,15 @@
 	</div>	
 	<main>
 		<div class="fotolocal">
-			<h2>Como chegar</h2>
-			<h4>Clique e encontre <br>o melhor trajeto</h4>
-			<h1>Rua Des. Pedro Silva - 2703<br>Coqueiros
+			<h2 class=" wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Como chegar</h2>
+			<h4 class=" wow slideInRight" data-wow-duration="1s" data-wow-delay="0.9s">Clique e encontre <br>o melhor trajeto</h4>
+			<h1 class=" wow slideInLeft" data-wow-duration="1s" data-wow-delay="1.3s">Rua Des. Pedro Silva - 2703<br>Coqueiros
 				Florianópolis</h1>
-
-		<a href="https://goo.gl/maps/KS3aJ6N27NS2">
-			<img src="images/GoogleMaps.png" alt="google maps">
-		</a>
-
+			<div class="maps wow slideInDown" data-wow-duration="1s" data-wow-delay="1.7s">
+				<a href="https://goo.gl/maps/KS3aJ6N27NS2" >
+					<img src="images/GoogleMaps.png" alt="google maps">
+				</a>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -83,5 +84,9 @@
 			$nav.toggleClass('mostrar');
 		});
 	</script>
+	<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+  	</script>
 </body>
 </html>
